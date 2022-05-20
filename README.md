@@ -1,5 +1,9 @@
 # bitmap-transform
 
+## Contributors
+- Rodger Reyes
+- Abdulahi Mohamud
+
 ## Lab 04 Reading and Writing BMP file
 Estimate of time needed to complete: 5 hour
 
