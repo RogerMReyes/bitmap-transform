@@ -27,7 +27,7 @@ public class App {
 //        System.out.println(args[2]);
 //        Bitmap newImg = new Bitmap(path,output);
 //        newImg.transform(transform);
-        
+
         Bitmap newImg = new Bitmap("app/src/main/resources/baldy-8bit.bmp","app/src/main/resources/baldy-8bit-redBG.bmp");
         newImg.transform("jail");
     }
