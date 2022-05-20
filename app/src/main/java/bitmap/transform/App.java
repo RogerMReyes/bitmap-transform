@@ -3,12 +3,117 @@
  */
 package bitmap.transform;
 
+import javax.imageio.ImageIO;
+
+import java.awt.image.BufferedImage;
+
+import java.io.File;
+
+import java.io.IOException;
+
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
+
+
+    public static void main(String[] args) throws IOException {
+//        String path = args[0];
+//        String output = args[1];
+//        String transform = args[2];
+//        System.out.println(args[0]);
+//        System.out.println(args[1]);
+//        System.out.println(args[2]);
+//        Bitmap newImg = new Bitmap(path,output);
+//        newImg.transform(transform);
+        
+        Bitmap newImg = new Bitmap("app/src/main/resources/baldy-8bit.bmp","app/src/main/resources/baldy-8bit-redBG.bmp");
+        newImg.transform("jail");
+    }
+//        String baldPath = "app/src/main/resources/baldy-8bit.bmp";
+//        Path path = Paths.get(baldPath);
+//        BufferedImage image = null;
+//        File f = null;
+//        f = new File(baldPath);
+//        int width = 1000;
+//        int height= 1000;
+//        image = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
+//        image = ImageIO.read(f);
+////        image.setRGB(100,0, 255);
+//        for(int i = 0; i < image.getWidth(); i++){
+//            for(int j=0; j < image.getHeight(); j++){
+//                System.out.println(image.getRGB(i,j));
+//                if(image.getRGB(i,j) == -131076){
+//                    image.setRGB(i,j, 255*65536+0*256+0);
+//                }
+//            }
+//        }
+//        File f2 = new File("app/src/main/resources/baldy-8bit-redBG.bmp");
+//        ImageIO.write(image, "bmp", f2);
+//        getFileBytes("app/src/main/resources/baldy-8bit.bmp");
+//        Bitmap newBmp = new Bitmap("app/src/main/resources/baldy-8bit.bmp", "redBG");
+//        newBmp.changeBgRed();
+//        changeBgRed();
+//        try {
+//            BufferedImage image = ImageIO.read(new File("app/src/main/resources/baldy-8bit.bmp"));
+//        } catch (IOException ex){
+//            ex.printStackTrace();
+//        }
+//
+
+
     }
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
-    }
-}
+//    public static void getFileBytes(String filePath){
+//        Path path = Paths.get(filePath);
+//        byte[] fileContent;
+//        try{
+//            fileContent = Files.readAllBytes(path.toAbsolutePath());
+//            for(byte x : fileContent){
+//                System.out.println(Integer.toHexString(x) + " " + x);
+//            }
+//        } catch(IOException ex) {
+//            ex.printStackTrace();
+//        }
+//    }
+//
+//    public static void changeBgRed(){
+//        Path path = Paths.get("app/src/main/resources/baldy-8bit.bmp");
+//        Path path2 = Paths.get("app/src/main/resources/baldy-8bit-redBG.bmp");
+//        byte[] fileContent;
+//        Scanner fileContent2 = new Scanner("app/src/main/resources/baldy-8bit-redBG.bmp");
+//        try{
+//            FileWriter myWriter = new FileWriter("app/src/main/resources/baldy-8bit-redBG.bmp");
+//            fileContent = Files.readAllBytes(path.toAbsolutePath());
+//            for(byte x : fileContent){
+//                String hexCode = (Integer.toHexString(x));
+//                if ( hexCode == "ffffffff"){
+//                    myWriter.write("hexCode");
+//                } else {
+//                    myWriter.write("write");
+//                }
+//            }
+//            myWriter.close();
+//            System.out.println(fileContent2.nextLine());
+//        } catch(IOException ex) {
+//            ex.printStackTrace();
+//        }
+//        finally {
+//        }
+//
+//    }
+
+
+
+//    public static void testBuffimg () {
+//        int width = 1000;
+//        int height = 1000;
+//        BufferedImage image = null;
+//        File f = null;
+//
+//        try{
+//            f = new File()
+//        }
+//    }
+//}
